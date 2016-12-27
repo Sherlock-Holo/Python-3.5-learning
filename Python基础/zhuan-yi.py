@@ -1,0 +1,4 @@
+print('''line0
+line1
+line2
+line3''')
