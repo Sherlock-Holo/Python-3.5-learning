@@ -14,8 +14,14 @@ def tgs(cs):
         b.append(cs[-1])
         return b
 
-L = [1]
+# L = [1]
 
-for i in range(11):
-    print(L)
-    L = tgs(L)
+# for i in range(11):
+#     print(L)
+#     L = tgs(L)
+
+def gentgs():
+    L = [1]
+    for i in range(11):
+        yield L
+        L = tgs(L)
