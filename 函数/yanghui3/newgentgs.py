@@ -4,7 +4,6 @@ def tgs(cs):
     max = len(cs) - 2        # 读取输入的list的长度并且-2为接下来计算做准备
     if len(cs) == 1:        # 如果list长度为1,就生成一个2长度的
         cs.append(cs[0])
-        print(cs)
         return cs
     else:        # 生成下一行杨辉三角
         n = 0
@@ -13,11 +12,10 @@ def tgs(cs):
             b.append(cs[n] + cs[n + 1])
             n = n + 1
         b.append(cs[-1])
-        print(b)
         return b
 
 L = [1]
 
 for i in range(11):
-    tgs(L)
+    print(L)
     L = tgs(L)
