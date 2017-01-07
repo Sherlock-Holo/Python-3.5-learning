@@ -1,6 +1,6 @@
 # -*- coding:utf8 -*-
 
-def _odd_iter():
+def _odd_iter():        # 生成奇数数列
     n = 1
 
     while True:
