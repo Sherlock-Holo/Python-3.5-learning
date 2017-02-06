@@ -12,7 +12,3 @@ class fib(object):
         if self.a > 100000:
             raise StopIteration()
         return self.a
-
-
-for n in fib():
-    print(n)
