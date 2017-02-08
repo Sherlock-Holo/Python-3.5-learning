@@ -1,2 +1,2 @@
-# Python-3.5-learning
-学习python3.5
+# Python-3.6-learning
+学习python3.6
