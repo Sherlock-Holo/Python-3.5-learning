@@ -3,6 +3,7 @@ import socket
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.connect(('127.0.0.1', 8080))
     s.sendall(b'I am Holo')
+    s.shutdown(socket.SHUT_WR)
 
     buffer = []
     while True:
